@@ -16,7 +16,7 @@ NSString *getUserInput(NSString *prompt) {
     
     //this is the same as NSString.stringWithUTF8String(inputChars); in java
     NSString *inputString = [NSString stringWithUTF8String:inputChars];
-    return [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return inputString;
 
 };
 
@@ -57,6 +57,8 @@ int main(int argc, const char * argv[]) {
             }
         }
 
+        
+        
         
 
 //
