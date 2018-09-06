@@ -20,11 +20,11 @@ Make string lowercase.
 ```
 3. Numberize
 ```
-Convert string to integer
+Convert string to integer.
 ```
 4. Canadianize
 ```
-Take the user's input and appent ", eh?" to it, Print the resulting string.
+Take the user's input and append ", eh?" to it, Print the resulting string.
 ```
 5. Respond
 ```
@@ -43,9 +43,34 @@ Create a new command-line application. Create a class called Box that is a subcl
 - Create an instance methods that will calcualte the volume and return it as a float.
 - Add a method that takes in a another box and returns how many times one box will fit inside the other.
 
+##Lab 3 - Maths​ - A CommandLine Game App
+
+Create a command line game called ​Maths​ that will generate a random addition question.
+
+### Learning outcomes
+
+- Can understand ​class​ vs ​instance​ method
+- Can understand the difference between a method ​signature​, the method definition​ and calling a ​method
+- Can decide when to override ​init​ versus creating a custom initialize
+- Can override ​init
+- Can understand why we set the "backing store" of properties inside ​init using ​_​ (underscore) rather than calling ​self
+- Can strip white space and new characters from string using NSCharacterSet
+- Can call a class convenience method on ​NSCharacterSet
+- Can generate random integers between a given range usingarc4random_uniform()
+- Can convert ​NSString*​ to a primitive ​NSInteger
+- Can understand how to modularize functionality into separate classes
+- Can refactor code to move functionality into a class
+- Can decide when to use a ​class​ vs an ​instance​ method
 
 
 
+###Goal
+- To prompt the user to input their answer
+- To parse the user's inputted answer and convert it to a primitive NSInteger
+- The app will log "Right!" for correct and "Wrong!" for incorrect answers
+- The app will present the ​next​ question immediately after the app outputsthe evaluation of the user's input (for now there's no exit option)
+- To add the ability to exit the game
+- To add a scoring function to the game
 
 ## Developed with
 
