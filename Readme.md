@@ -9,7 +9,7 @@ We're going to create an OS X command-line app that does some simple string mani
 - a string, to operate on
 Wrap the whole app in an infinite while loop, so users can do multiple operations. Be sure to print out the menu of options at the start of each loop of the app.
 
-#####Operations
+##### Operations
 1. Uppercase
 ```
 Make string uppercase.
@@ -43,7 +43,7 @@ Create a new command-line application. Create a class called Box that is a subcl
 - Create an instance methods that will calcualte the volume and return it as a float.
 - Add a method that takes in a another box and returns how many times one box will fit inside the other.
 
-##Lab 3 - Maths​ - A CommandLine Game App
+## Lab 3 - Maths​ - A CommandLine Game App
 
 Create a command line game called ​Maths​ that will generate a random addition question.
 
@@ -64,7 +64,7 @@ Create a command line game called ​Maths​ that will generate a random additi
 
 
 
-###Goal
+### Goal
 - To prompt the user to input their answer
 - To parse the user's inputted answer and convert it to a primitive NSInteger
 - The app will log "Right!" for correct and "Wrong!" for incorrect answers
