@@ -17,13 +17,14 @@ int main(int argc, const char * argv[]) {
         
         InputCollector *inputCollector = [[InputCollector alloc] init];
         ContactList *list = [ContactList new];
+        NSLog(@"Welcome!");
         BOOL isRunning = YES;
         while (isRunning) {
-            NSString *userInput = [inputCollector inputForPrompt:@"What would you like to do next?\nnew - Create a new contact\nlist - List all contacts\nshow - Check if contact exists at certain index\nfind - search\nhistory - show last 3 commands entered\nquit - Exit application"];
+            NSString *userInput = [inputCollector inputForPrompt:@"What would you like to do?\nnew - Create a new contact\nlist - List all contacts\nshow - Check if contact exists at certain index\nfind - search\nhistory - show last 3 commands entered\nquit - Exit application"];
             
             if([userInput  isEqual: @"quit"]) {
                 isRunning = NO;
-                NSLog(@"Adieu");
+                NSLog(@"See you!");
                 continue;
             } else if ([userInput  isEqual: @"new"]){
                 NSString *finalEmail;
@@ -41,7 +42,6 @@ int main(int argc, const char * argv[]) {
                         }
                         i++;
                         if(i == [list.contacts count] && foundEmail != YES) {
-                            NSLog(@"Adieu");
                             foundEmail = NO;
                             continue;
                         }
