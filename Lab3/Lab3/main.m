@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
    
         NSLog(@"MATHS!");
         
-        ScoreKeeper *scoreKeeper = [[ScoreKeeper alloc] init];
+        ScoreKeeper *scoreKeeper = [ScoreKeeper new];
         BOOL gameOn = YES;
         while(gameOn) {
             
@@ -28,13 +28,12 @@ int main(int argc, const char * argv[]) {
                 continue;
             }else if ([userInput intValue] == [current_question answer]) {
                 NSLog(@"Right!");
-                scoreKeeper.right++;
-                NSLog(@"%@", scoreKeeper.getScore);
+                scoreKeeper.right++
             } else {
                 NSLog(@"Wrong!");
                 scoreKeeper.wrong++;
-                NSLog(@"%@", scoreKeeper.getScore);
             }
+            NSLog(@"%@", scoreKeeper.getScore);
         }
     }
     return 0;

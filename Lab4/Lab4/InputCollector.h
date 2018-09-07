@@ -10,5 +10,7 @@
 
 @interface InputCollector : NSObject
 
+
+@property (nonatomic, strong) NSMutableArray *commandlist;
 -(NSString *) inputForPrompt: (NSString *) promptString;
 @end

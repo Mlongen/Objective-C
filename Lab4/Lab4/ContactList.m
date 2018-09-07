@@ -8,6 +8,7 @@
 
 #import "ContactList.h"
 #import "Contact.h"
+#import "PhoneNumber.h"
 
 @implementation ContactList
 
@@ -16,7 +17,7 @@
 {
     self = [super init];
     if (self) {
-        _contacts = [NSMutableArray arrayWithCapacity:5];
+        _contacts = [NSMutableArray arrayWithCapacity:10];
     }
     return self;
 }
@@ -29,15 +30,27 @@
     int i = 0;
     while (i < length){
         Contact *thisContact = [_contacts objectAtIndex:i];
-        NSLog(@"%@", [NSString stringWithFormat:@"%d%s%@", i, ": ", thisContact.name]);
+        NSMutableString *phoneNumbers = [NSMutableString new];
+        for (PhoneNumber *phoneNumber in thisContact.phoneNumbers){
+            [phoneNumbers appendString:[NSString stringWithFormat:@"%@%s%@ ", phoneNumber.type, ":", phoneNumber.number]];
+        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%d%s%@%s%@%s%@", i, ": <", thisContact.name,"> (", thisContact.email,") - Phones: ", phoneNumbers]);
         i++;
     }
+}
+-(NSInteger)getContactsLength {
+    return [_contacts count];
 }
 -(void)showDetails: (unsigned long) index {
     unsigned long length = [_contacts count];
     if (index < length){
         Contact *thisContact = [_contacts objectAtIndex:index];
-        NSLog(@"%@", [NSString stringWithFormat:@"%lu%s%@", index, ": ", thisContact.name]);
+        
+        NSMutableString *phoneNumbers = [NSMutableString new];
+        for (PhoneNumber *phoneNumber in thisContact.phoneNumbers){
+            [phoneNumbers appendString:[NSString stringWithFormat:@"%@%s%@ ", phoneNumber.type, ":", phoneNumber.number]];
+        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%lu%s%@%s%@%s%@", index, ": <", thisContact.name,"> (", thisContact.email,") - Phones: ", phoneNumbers]);
     } else {
         NSLog(@"Not found");
     }

@@ -16,6 +16,7 @@
     if (self) {
         _name = name;
         _email = email;
+        _phoneNumbers = [NSMutableArray arrayWithCapacity:10];
     }
     return self;
 }

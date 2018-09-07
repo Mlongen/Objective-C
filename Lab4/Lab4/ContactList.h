@@ -13,7 +13,8 @@
 - (instancetype)init;
 -(void)addContact:(Contact *) newContact;
 -(void)printContacts;
+-(NSInteger)getContactsLength;
 -(void)showDetails: (unsigned long) index;
-@property (assign, readwrite) NSMutableArray *contacts;
+@property (nonatomic, retain) NSMutableArray *contacts;
 
 @end

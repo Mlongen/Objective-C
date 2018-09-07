@@ -25,8 +25,8 @@
     if (total == 0) {
         percentage = 0;
     } else {
-        percentage = (100 * _right)/ total;
+        percentage = (_right/ total) * 100;
     }
-    return [NSString stringWithFormat:@"%@%ld%s%ld%s%s%ld%s", @"score: ", (long)_right, " right, ", (long)_wrong, " wrong", " ---- ", (long)percentage, "\%"];
+    return [NSString stringWithFormat:@"%@%ld%s%ld%s%s%ld%s", @"score: ", _right, " right, ", _wrong, " wrong", " ---- ", (long)percentage, "\%"];
 };
 @end

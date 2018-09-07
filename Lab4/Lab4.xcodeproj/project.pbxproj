@@ -11,6 +11,7 @@
 		A1F40F8D21419CE400B9C4B6 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F40F8C21419CE400B9C4B6 /* InputCollector.m */; };
 		A1F40F902141A0FB00B9C4B6 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F40F8F2141A0FB00B9C4B6 /* Contact.m */; };
 		A1F40F932141A25300B9C4B6 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F40F922141A25300B9C4B6 /* ContactList.m */; };
+		A1F40F962142FAC000B9C4B6 /* PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F40F952142FAC000B9C4B6 /* PhoneNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		A1F40F8F2141A0FB00B9C4B6 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		A1F40F912141A25300B9C4B6 /* ContactList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
 		A1F40F922141A25300B9C4B6 /* ContactList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
+		A1F40F942142FAC000B9C4B6 /* PhoneNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumber.h; sourceTree = "<group>"; };
+		A1F40F952142FAC000B9C4B6 /* PhoneNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 			children = (
 				A1F40F8421419CD500B9C4B6 /* main.m */,
 				A1F40F8E2141A0FB00B9C4B6 /* Contact.h */,
+				A1F40F942142FAC000B9C4B6 /* PhoneNumber.h */,
+				A1F40F952142FAC000B9C4B6 /* PhoneNumber.m */,
 				A1F40F8F2141A0FB00B9C4B6 /* Contact.m */,
 				A1F40F912141A25300B9C4B6 /* ContactList.h */,
 				A1F40F922141A25300B9C4B6 /* ContactList.m */,
@@ -137,6 +142,7 @@
 				A1F40F8D21419CE400B9C4B6 /* InputCollector.m in Sources */,
 				A1F40F902141A0FB00B9C4B6 /* Contact.m in Sources */,
 				A1F40F8521419CD500B9C4B6 /* main.m in Sources */,
+				A1F40F962142FAC000B9C4B6 /* PhoneNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

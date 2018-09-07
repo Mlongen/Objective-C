@@ -12,6 +12,7 @@
 
 - (instancetype)initWithName: (NSString *) name andEmail: (NSString *) email;
 @property (strong) NSString *name;
-@property ( strong) NSString *email;
+@property (strong) NSString *email;
+@property (nonatomic, retain) NSMutableArray *phoneNumbers;
 
 @end
