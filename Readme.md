@@ -56,7 +56,7 @@ Create a command line game called ​Maths​ that will generate a random additi
 - Can understand why we set the "backing store" of properties inside ​init using ​_​ (underscore) rather than calling ​self
 - Can strip white space and new characters from string using NSCharacterSet
 - Can call a class convenience method on ​NSCharacterSet
-- Can generate random integers between a given range usingarc4random_uniform()
+- Can generate random integers between a given range using arc4random_uniform()
 - Can convert ​NSString*​ to a primitive ​NSInteger
 - Can understand how to modularize functionality into separate classes
 - Can refactor code to move functionality into a class
