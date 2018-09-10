@@ -32,7 +32,7 @@
         Contact *thisContact = [_contacts objectAtIndex:i];
         NSMutableString *phoneNumbers = [NSMutableString new];
         for (PhoneNumber *phoneNumber in thisContact.phoneNumbers){
-            [phoneNumbers appendString:[NSString stringWithFormat:@"%@%s%@ ", phoneNumber.type, ":", phoneNumber.number]];
+            [phoneNumbers appendString:[NSString stringWithFormat:@"%@%s%@ ", phoneNumber.type, "-", phoneNumber.number]];
         }
         NSLog(@"%@", [NSString stringWithFormat:@"%d%s%@%s%@%s%@", i, ": <", thisContact.name,"> (", thisContact.email,") - Phones: ", phoneNumbers]);
         i++;
@@ -48,7 +48,7 @@
         
         NSMutableString *phoneNumbers = [NSMutableString new];
         for (PhoneNumber *phoneNumber in thisContact.phoneNumbers){
-            [phoneNumbers appendString:[NSString stringWithFormat:@"%@%s%@ ", phoneNumber.type, ":", phoneNumber.number]];
+            [phoneNumbers appendString:[NSString stringWithFormat:@"%@%s%@ ", phoneNumber.type, "-", phoneNumber.number]];
         }
         NSLog(@"%@", [NSString stringWithFormat:@"%lu%s%@%s%@%s%@", index, ": <", thisContact.name,"> (", thisContact.email,") - Phones: ", phoneNumbers]);
     } else {
