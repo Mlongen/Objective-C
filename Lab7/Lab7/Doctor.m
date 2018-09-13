@@ -39,11 +39,10 @@
 -(Boolean) prescribeMedication: (Patient *) patient withSymptoms: (NSString *) symptoms andWithPatientDescription: (NSString *) patientDescription{
     if ([patientList containsObject:patient]) {
         
-        //1. check the symptom
-        //2. create a prescription
-        
+        Prescription *new = [Prescription writePrescription:self withPatient:patient withSymptom:symptoms withPatientDescription:patientDescription];
+        [patient.prescriptions addObject:new];
         //3. give the prescription to the patient
-        
+        NSLog(@"%@", [NSString stringWithFormat:@"%@%@%@", @"Prescription for :", symptoms, @" has been given to patient"]);
         //4. give the medication
         NSLog(@"Medication on the way...");
         return true;

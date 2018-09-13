@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Doctor.h"
+#import "Prescription.h"
 
 @interface Patient : NSObject
 
@@ -17,5 +17,6 @@
 - (instancetype)initWithName:(NSString *)name andAge:(NSUInteger) age andHealthCard: (Boolean)healthCard;
 -(Boolean) visitDoctor: (Doctor *) doctor;
 @property (nonatomic, assign) NSMutableArray *prescriptions;
+-(void) requestMedication: (Doctor *) doctor;
 
 @end

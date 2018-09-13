@@ -30,7 +30,7 @@
     return self;
 }
 
--(Prescription *)writePrescription:(Doctor *) doctor withPatient: (Patient *) patient withSymptom: (NSString *) symptom withPatientDescription: (NSString *) patientDescription{
++(Prescription *)writePrescription:(Doctor *) doctor withPatient: (Patient *) patient withSymptom: (NSString *) symptom withPatientDescription: (NSString *) patientDescription{
     Prescription *new = [[Prescription alloc] init];
     new->patientName = patient.name;
     new->doctorName = doctor.name;

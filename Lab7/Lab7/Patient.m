@@ -12,7 +12,6 @@
 @interface Patient() {
 @private
     Boolean healthCard;
-    NSMutableArray *prescriptions;
 }
 @end
 @implementation Patient
@@ -24,7 +23,7 @@
         _name = name;
         healthCard = healthCard;
         _age = age;
-        prescriptions = [NSMutableArray new];
+        _prescriptions = [NSMutableArray new];
     }
     return self;
 }
@@ -34,7 +33,7 @@
 
 -(void) requestMedication: (Doctor *) doctor {
     //1. doctor checking if self(patient) is in the patient list.
-    if ([doctor prescribeMedication:self withSymptoms:NULL]) {
+    if ([doctor prescribeMedication: self withSymptoms: NULL andWithPatientDescription: NULL]) {
         NSLog(@"Got the medication!");
     } else {
         NSLog(@"REJECTED! No medication...");

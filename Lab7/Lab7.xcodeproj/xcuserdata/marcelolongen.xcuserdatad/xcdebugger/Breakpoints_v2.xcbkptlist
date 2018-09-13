@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab7/Patient.m"
-            timestampString = "558503872.6281331"
+            timestampString = "558547223.438221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "-initWithName:andAge:andHealthCard:"
             landmarkType = "7">
          </BreakpointContent>

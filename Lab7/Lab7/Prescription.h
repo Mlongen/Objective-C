@@ -13,7 +13,7 @@
 @interface Prescription : NSObject
 
 
--(Prescription *)writePrescription:(Doctor *) doctor withPatient: (Patient *) patient withSymptom: (NSString *) symptom withPatientDescription: (NSString *) patientDescription;
++(Prescription *)writePrescription:(Doctor *) doctor withPatient: (Patient *) patient withSymptom: (NSString *) symptom withPatientDescription: (NSString *) patientDescription;
 
 @end
 

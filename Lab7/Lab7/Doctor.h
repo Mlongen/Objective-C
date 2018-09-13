@@ -19,5 +19,5 @@
 
 - (instancetype)initWithName:(NSString *)name andSpecialization:(NSString *)specialization;
 -(Boolean)acceptPatient:(Patient *) patient withHealthCard: (Boolean) healthCard;
--(Boolean) prescribeMedication: (Patient *) patient withSymptoms: (NSString *) symptoms;
+-(Boolean) prescribeMedication: (Patient *) patient withSymptoms: (NSString *) symptoms andWithPatientDescription: (NSString *) patientDescription;
 @end
