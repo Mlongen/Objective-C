@@ -93,20 +93,19 @@
     // print GAMEOVER IS the game is over
     //2. print current deck and score
     NSLog(@"%s", "*****************************");
-    NSLog(@"%s", "*                           *");
     if (rollCount == 0) {
         NSLog(@"%s", "*         GAME OVER         *");
     }
+    NSLog(@"%s", "*                           *");
     NSLog(@"%s", "*       Current deck:       *");
-
     [self displayCurrentDeck];
     NSLog(@"*     Remaining Rolls: %d    *", rollCount);
     int score = 0;
     for (Dice *die in _displayDice) {
         score += die.value;
     }
-    NSLog(@"%@", [NSString stringWithFormat:@"*         Score: %d         *", score]);
     NSLog(@"%s", "*                           *");
+    NSLog(@"%@", [NSString stringWithFormat:@"*         Score: %d         *", score]);
     NSLog(@"%s", "*****************************");
 }
 @end
