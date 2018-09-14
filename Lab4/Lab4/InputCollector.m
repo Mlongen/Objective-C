@@ -14,7 +14,6 @@
 {
     self = [super init];
     if (self) {
-        _commandlist = [NSMutableArray arrayWithCapacity:100];
     }
     return self;
 }
@@ -27,7 +26,6 @@
     fgets(inputChars, 255, stdin);
     NSString *inputString =[NSString stringWithCString:inputChars encoding:NSUTF8StringEncoding];
     NSString *trimmedString = [inputString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    [_commandlist addObject:trimmedString];
     return trimmedString;
     
 }
