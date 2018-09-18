@@ -13,9 +13,7 @@
 #import "FirstManager.h"
 #import "SecondManager.h"
 int main(int argc, const char * argv[])
-
 {
-    
     @autoreleasepool {
         
         Kitchen *restaurantKitchen = [Kitchen new];
